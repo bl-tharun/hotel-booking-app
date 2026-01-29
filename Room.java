@@ -8,15 +8,12 @@
  * Description:
  * This abstract class represents a generic hotel room.
  *
- * At this stage, the class is used to model common
- * attributes shared by all room types.
+ * It models attributes that are intrinsic to a room type
+ * and remain constant regardless of availability.
  *
- * No availability or booking logic is handled here.
- * This class focuses purely on domain modeling.
+ * Inventory-related concerns are intentionally excluded.
  *
- * Concrete room types will extend this class.
- *
- * @version 1.0
+ * @version 1.1
  */
 public abstract class Room {
 
@@ -31,23 +28,33 @@ public abstract class Room {
     protected int squareFeet;
 
     /**
+     * Price charged per night for this room type.
+     */
+    protected double pricePerNight;
+
+    /**
      * Constructor used by child classes to
      * initialize common room attributes.
      *
      * @param numberOfBeds number of beds in the room
      * @param squareFeet total room size
+     * @param pricePerNight cost per night
      */
-    public Room(int numberOfBeds, int squareFeet) {
+    public Room(int numberOfBeds, int squareFeet, double pricePerNight) {
         this.numberOfBeds = numberOfBeds;
         this.squareFeet = squareFeet;
+        this.pricePerNight = pricePerNight;
     }
 
     /**
      * Displays room details.
-     * Concrete classes may reuse or extend this behavior.
+     *
+     * This method provides a reusable way
+     * to present room characteristics.
      */
     public void displayRoomDetails() {
         System.out.println("Beds: " + numberOfBeds);
         System.out.println("Size: " + squareFeet + " sqft");
+        System.out.println("Price per night: " + pricePerNight);
     }
 }

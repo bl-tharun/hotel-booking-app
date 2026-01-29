@@ -5,18 +5,15 @@
  *
  * Represents a suite room in the hotel.
  *
- * This class extends Room and defines
- * attributes specific to a suite.
- *
- * @version 1.0
+ * @version 1.1
  */
 public class SuiteRoom extends Room {
 
     /**
      * Initializes a SuiteRoom with
-     * fixed attributes.
+     * predefined attributes.
      */
     public SuiteRoom() {
-        super(3, 750);
+        super(3, 750, 5000.0);
     }
 }
