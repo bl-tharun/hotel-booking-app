@@ -5,18 +5,15 @@
  *
  * Represents a single room in the hotel.
  *
- * This class extends Room and provides
- * predefined values for a single room.
- *
- * @version 1.0
+ * @version 1.1
  */
 public class SingleRoom extends Room {
 
     /**
      * Initializes a SingleRoom with
-     * fixed attributes.
+     * predefined attributes.
      */
     public SingleRoom() {
-        super(1, 250);
+        super(1, 250, 1500.0);
     }
 }

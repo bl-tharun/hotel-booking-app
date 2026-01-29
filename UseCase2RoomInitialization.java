@@ -6,18 +6,14 @@
  * Use Case 2: Basic Room Types & Static Availability
  *
  * Description:
- * This class demonstrates how different room
- * types can be initialized and displayed.
+ * This class demonstrates room initialization
+ * using domain models before introducing
+ * centralized inventory management.
  *
- * At this stage, the application:
- * - Creates room objects
- * - Uses simple variables to represent availability
- * - Displays room information
+ * Availability is represented using
+ * simple variables to highlight limitations.
  *
- * No centralized inventory or data structures
- * are introduced in this use case.
- *
- * @version 2.0
+ * @version 2.1
  */
 public class UseCase2RoomInitialization {
 
